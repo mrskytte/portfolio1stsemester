@@ -119,7 +119,7 @@ main {
 #index > p {
     font-family: 'Oswald', sans-serif;
     font-weight: bolder;
-
+    
 }
 
 .htmltop,
@@ -402,12 +402,6 @@ main {
 }
 
 /*PORTFOLIO PAGES*/
-#bw,
-#ba,
-#bc,
-#bu {
-    padding-bottom: 5%;
-}
 
 .sectionheader {
     width: 64%;
@@ -430,31 +424,24 @@ main {
     flex-direction: column;
 }
 
-.odd-h5 {
+.first-h5 {
     position: relative;
-    left: 50%;
-    transform: translateY(50%);
+    left: 78%;
+    transform: translateY(850%);
     z-index: -1;
-    font-size: 5em;
+    font-size: 1.6em;
     font-weight: bold;
     padding: 0;
-    margin: 0;
-    margin-bottom: 3%;
-}
-
-.even-h5 {
-    position: relative;
-    left: 5%;
-    transform: translateY(50%);
-    z-index: -1;
-    font-size: 5em;
-    font-weight: bold;
-    padding: 0;
-    margin: 0;
     margin-bottom: 3%;
 }
 
 .page-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "p img"
+        "p title"
+        "p download";
     height: 20%;
     width: 75%;
     background-color: #FCF8F4;
@@ -464,31 +451,9 @@ main {
     margin: auto;
 }
 
-.odd-box{
-      display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "p img"
-        "p title"
-        "p download";
-}
-
-.even-box {
-      display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "img p"
-        "title p"
-        "download p";
-}
-
-.even-box > p {
-    margin-left: 7%;
-}
-
 .task-p {
     grid-area: p;
-    font-size: 0.65em;
+    font-size: 0.7em;
     width: 95%;
 }
 
@@ -503,26 +468,12 @@ main {
     font-weight: bolder;
     text-transform: uppercase;
     text-align: center;
-    font-family: 'Oswald', sans-serif;
 }
 
 .img-text-hightlight {
     color: #B38D97;
 }
 
-.img-a {
+.img-button {
     grid-area: download;
-    text-decoration: none;
-    width: 40%;
-    padding: 3%;
-    background-color: #70798C;
-    box-shadow: 5px 5px 10px rgba(112, 121, 140, 0.3);
-    color: #FCF8F4;
-    margin: auto;
-    border-radius: 41px;
-    text-align: center;
-    font-size: 0.6em;
-    text-transform: uppercase;
-    font-weight: bolder;
-    font-family: 'Oswald', sans-serif;
 }
