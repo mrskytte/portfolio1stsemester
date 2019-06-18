@@ -253,6 +253,7 @@ main {
     height: 12em;
     width: 18em;
     border-radius: 50px;
+    cursor: pointer;
 }
 
 #bw-box {
@@ -526,6 +527,7 @@ main {
 }
 
 .img-a {
+    cursor: pointer;
     grid-area: download;
     text-decoration: none;
     width: 40%;

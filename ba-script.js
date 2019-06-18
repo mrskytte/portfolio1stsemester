@@ -23,7 +23,7 @@ var Img1Timer = {
 function Img1Action() {
     Img1Timer.start();
     task020201.style.boxShadow = ("6px 12px 24px rgba(0, 0, 0, 0.3)");
-    task020201.style.transform = ("translate(1%, 1%)")
+    task020201.style.transform = ("translate(-1%, 1%)")
     h5[0].style.transform = ("translate(.5%, 40%)")
 }
 
@@ -91,7 +91,7 @@ var Img3Timer = {
 function Img3Action() {
     Img3Timer.start();
     task020407.style.boxShadow = ("6px 12px 24px rgba(0, 0, 0, 0.3)");
-    task020407.style.transform = ("translate(1%, 1%)")
+    task020407.style.transform = ("translate(-1%, 1%)")
     h5[2].style.transform = ("translate(.5%, 40%)")
 }
 

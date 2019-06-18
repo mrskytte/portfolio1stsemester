@@ -23,7 +23,7 @@ var Img1Timer = {
 function Img1Action() {
     Img1Timer.start();
     task010102.style.boxShadow = ("6px 12px 24px rgba(0, 0, 0, 0.3)");
-    task010102.style.transform = ("translate(1%, 1%)")
+    task010102.style.transform = ("translate(-1%, 1%)")
     h5[0].style.transform = ("translate(.5%, 40%)")
 }
 
@@ -100,7 +100,7 @@ task010401.addEventListener("mouseleave", img3Reset)
 
 function img3Action() {
      task010401.style.boxShadow = ("6px 12px 24px rgba(0, 0, 0, 0.3)");
-    task010401.style.transform = ("translate(1%, 1%)")
+    task010401.style.transform = ("translate(-1%, 1%)")
     h5[2].style.transform = ("translate(.5%, 40%)")
 }
 
