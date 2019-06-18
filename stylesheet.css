@@ -15,6 +15,11 @@ a {
 
 }
 
+a:hover {
+    text-shadow:  2px 3px 4px rgba(0, 0, 0, 0.15);
+    color: #B38D97;
+}
+
 h1,
 h2,
 h3,
@@ -166,7 +171,7 @@ main {
         "title tble"
         "p tble";
     overflow-y: hidden;
-    height: 100vh
+    height: 100%
 }
 
 #title {
@@ -189,38 +194,17 @@ main {
 #about-table {
     position: relative;
     grid-area: tble;
-    width: 90%;
-    height: 75%;
+    width: 70%;
+    height: 45%;
     background-color: #FCF8F4;
     border-radius: 31px;
     box-shadow: 10px 8px 16px rgba(0,0,0,0.15);
-    transform: translateY(15%);
     text-align: center;
-    overflow: visible;
+    overflow: hidden;
+    align-self: center;
 }
 
-#table {
-    margin: auto;
-    width: 80%;
-    position: relative;
-    top: -30vh;
-}
 
-#columns {
-    width: 75%;
-    height: 50%;
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    top: 19.3vh;
-
-}
-
-.table-column {
-    background-color: #70798C;
-    height: 50%;
-    width: 5%;
-}
 
 /*PORTFOLIO*/
 #portfolio {
