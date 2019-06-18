@@ -13,7 +13,7 @@ var Img1Array = ["assets/images/01-01-02/page-1.png", "assets/images/01-01-02/pa
 var Img1Index = 0;
 var Img1Timer = {
     start: function () {
-        this.interval = setInterval(changeImg1, 750);
+        this.interval = setInterval(changeImg1, 500);
     },
     stop: function () {
         clearInterval(this.interval)
@@ -59,7 +59,7 @@ var Img2Index = 0;
 
 var Img2Timer = {
     start: function () {
-        this.interval = setInterval(changeImg2, 750);
+        this.interval = setInterval(changeImg2, 500);
     },
     stop: function () {
         clearInterval(this.interval)

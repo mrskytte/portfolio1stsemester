@@ -505,9 +505,11 @@ main {
     width: 95%;
 }
 
-.task-img {
+.task-img,
+#img-020406 {
     grid-area: img;
     width: 100%;
+    align-self: end;
 }
 
 .img-caption {
@@ -538,4 +540,16 @@ main {
     text-transform: uppercase;
     font-weight: bolder;
     font-family: 'Oswald', sans-serif;
+    align-self: start;
+}
+
+#button020406 {
+    position: relative;
+    top: -80%;
+}
+
+.img-a:hover {
+    transition:all .25s !important;
+    transform: translateY(-10%) !important;
+    background-color: #B38D97;
 }
