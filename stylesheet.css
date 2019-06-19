@@ -94,7 +94,7 @@ side {
     background-color: #FFFEFD;
     bottom: 0;
     left: 45%;
-     box-shadow: 5px 0px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 5px 0px 6px rgba(0, 0, 0, 0.16);
     z-index: 3
 }
 
@@ -365,6 +365,16 @@ main {
     cursor: pointer;
 }
 
+@media only screen and (max-width:900px) {
+     .odd-numbers,
+    .even-numbers {
+        font-size: 18em;
+     }
+    .portfolio-boxes {
+        width: 15em;
+    }
+    }
+
 #bw-box {
     position: absolute;
     top: 25%;
@@ -372,6 +382,7 @@ main {
     text-align: right;
     z-index: 1;
 }
+
 
 #bw-box > h2 {
     font-size: 4.5em;
@@ -403,6 +414,7 @@ main {
     top: -20%;
     left: 25%;
 }
+
 
 #ba-box {
     position: absolute;
@@ -519,6 +531,64 @@ main {
     top: 355%;
     right: 32%;
 }
+
+@media only screen and (max-width:900px) {
+     #bw-box {
+         top: 20%;
+         left: 20%;
+     }
+    #basic-web > h1 {
+        font-size: 4.5em;
+        left: 40%;
+        top: 8%;
+    }
+    #basic-web > p {
+        top: -5%;
+        left: 2%;
+    }
+     #ba-box {
+         top: 80%;
+         left: 5%;
+     }
+    #ba-box > h2 {
+        font-size: 3.4em;
+    }
+    #basic-animation > h1 {
+        font-size: 4.5em;
+        left: 7%;
+        top: 68%;
+    }
+    #basic-animation > p {
+        top: 55%;
+        left: 60%;
+    }
+        #bc-box {
+         top: 140%;
+         left: 20%;
+     }
+    #basic-content > h1 {
+        font-size: 4.5em;
+        left: 40%;
+        top: 128%;
+    }
+    #basic-content > p {
+        top: 115%;
+        left: 0;
+    }
+     #bu-box {
+         top: 200%;
+         left: 5%;
+     }
+    #basic-ux > h1 {
+        font-size: 4.5em;
+        left: 7%;
+        top: 188%;
+    }
+    #basic-ux > p {
+        top: 175%;
+        left: 60%;
+    }
+    }
 
 /*PORTFOLIO PAGES*/
 #bw,
