@@ -1,5 +1,17 @@
 //BASIC ANIMATION LANDING PAGE
 
+//HAMBURGER MENU
+
+const hamburger = document.getElementById("hide-button")
+const side = document.getElementsByTagName("side")
+
+hamburger.addEventListener("click", openMenu)
+
+function openMenu(){
+    side[0].style.top = "0";
+    hamburger.style.bottom = "107%"
+}
+
 //TASK 02-02-01
 const task020201 = document.getElementById("task1-box")
 const Img1 = document.getElementById("img-020201");

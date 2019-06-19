@@ -1,5 +1,7 @@
 //BASIC UX LANDING PAGE
 
+
+
 //TASK 04-01-01
 const task040101 = document.getElementById("task1-box")
 const Img1 = document.getElementById("img-040101");

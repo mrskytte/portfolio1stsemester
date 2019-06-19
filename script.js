@@ -1,4 +1,17 @@
 //PORTFOLIO LANDING PAGE
+
+//HAMBURGER MENU
+
+const hamburger = document.getElementById("hide-button")
+const side = document.getElementsByTagName("side")
+
+hamburger.addEventListener("click", openMenu)
+
+function openMenu(){
+    side[0].style.top = "0";
+    hamburger.style.bottom = "107%"
+}
+
 //DEFINING ELEMENTS
 var website = window.location.hostname
 
