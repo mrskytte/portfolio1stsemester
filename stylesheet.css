@@ -66,7 +66,7 @@ body {
 /*SIDEBAR*/
 
 side {
-    transition:all 1s;
+    transition: all 1s;
     position: fixed;
     width: 17vw;
     height: 100vh;
@@ -74,16 +74,16 @@ side {
     box-shadow: 5px 0px 6px rgba(0, 0, 0, 0.16);
 }
 
- @media only screen and (max-width:900px) {
-     side {
-         top: 100vh;
-         width: 100vw;
-         z-index: 2
-     }
+@media only screen and (max-width:900px) {
+    side {
+        top: 100vh;
+        width: 100vw;
+        z-index: 2
     }
+}
 
 #hide-button {
-    transition:all 1s;
+    transition: all 1s;
     display: none;
     position: fixed;
     width: 10%;
@@ -98,14 +98,14 @@ side {
     z-index: 3
 }
 
- @media only screen and (max-width:900px) {
-     #hide-button {
-         display: inherit;
-     }
+@media only screen and (max-width:900px) {
+    #hide-button {
+        display: inherit;
     }
+}
 
-.hamburger{
-    transition:all 1s;
+.hamburger {
+    transition: all 1s;
 }
 
 .hamburger:nth-child(1) {
@@ -115,6 +115,7 @@ side {
     margin-top: 20%;
     background-color: #70798C;
 }
+
 .hamburger:nth-child(2) {
     height: 10%;
     width: 60%;
@@ -122,6 +123,7 @@ side {
     margin-top: 10%;
     background-color: #70798C;
 }
+
 .hamburger:nth-child(3) {
     height: 10%;
     width: 60%;
@@ -139,15 +141,15 @@ nav {
     transform: translateY(15%)
 }
 
- @media only screen and (max-width:900px) {
-     nav {
+@media only screen and (max-width:900px) {
+    nav {
         display: inherit;
         width: 80%;
-         margin: auto;
-         margin-top: 15%;
-         text-align: center;
-     }
+        margin: auto;
+        margin-top: 15%;
+        text-align: center;
     }
+}
 
 main {
     margin-left: 17%;
@@ -172,11 +174,11 @@ main {
     max-width: 200px;
 }
 
- @media only screen and (max-width:900px) {
-     #logo-img {
-         margin:0;
-     }
+@media only screen and (max-width:900px) {
+    #logo-img {
+        margin: 0;
     }
+}
 
 #list-points {
     margin: 20%;
@@ -185,11 +187,11 @@ main {
     font-size: .8em;
 }
 
- @media only screen and (max-width:900px) {
-     #list-points {
-         margin: 10%;
-     }
+@media only screen and (max-width:900px) {
+    #list-points {
+        margin: 10%;
     }
+}
 
 #list-points > p {
     font-family: 'Oswald', sans-serif;
@@ -255,10 +257,11 @@ main {
     .hw {
         transform: translate(5%, 20%);
     }
+
     .index-info {
         transform: translate(30%, 100%);
     }
-    }
+}
 
 /*ABOUT*/
 
@@ -272,16 +275,16 @@ main {
     height: 100%
 }
 
- @media only screen and (max-width:900px) {
-     #about {
-       grid-template-columns: 1fr 8fr 1fr;
-         grid-template-areas:
-             ". title ."
-             ". p ."
-             ". tble .";
-         overflow-x: visible;
-     }
+@media only screen and (max-width:900px) {
+    #about {
+        grid-template-columns: 1fr 8fr 1fr;
+        grid-template-areas:
+            ". title ."
+            ". p ."
+            ". tble .";
+        overflow-x: visible;
     }
+}
 
 #title {
     grid-area: title;
@@ -300,12 +303,12 @@ main {
     transform: translateY(-20%);
 }
 
- @media only screen and (max-width:900px) {
-     #about-text {
+@media only screen and (max-width:900px) {
+    #about-text {
         align-self: end;
-         transform: translateY(-10%);
-     }
+        transform: translateY(-10%);
     }
+}
 
 #about-table {
     position: relative;
@@ -321,14 +324,14 @@ main {
     align-self: center;
 }
 
- @media only screen and (max-width:900px) {
-     #about-table {
+@media only screen and (max-width:900px) {
+    #about-table {
         min-height: 200px;
-         margin: 0;
-         justify-self: center;
-         transform: translateY(-25%);
-     }
+        margin: 0;
+        justify-self: center;
+        transform: translateY(-25%);
     }
+}
 
 
 /*PORTFOLIO*/
@@ -366,14 +369,16 @@ main {
 }
 
 @media only screen and (max-width:900px) {
-     .odd-numbers,
+
+    .odd-numbers,
     .even-numbers {
         font-size: 18em;
-     }
+    }
+
     .portfolio-boxes {
         width: 15em;
     }
-    }
+}
 
 #bw-box {
     position: absolute;
@@ -533,62 +538,74 @@ main {
 }
 
 @media only screen and (max-width:900px) {
-     #bw-box {
-         top: 20%;
-         left: 20%;
-     }
+    #bw-box {
+        top: 20%;
+        left: 20%;
+    }
+
     #basic-web > h1 {
         font-size: 4.5em;
         left: 40%;
         top: 8%;
     }
+
     #basic-web > p {
         top: -5%;
         left: 2%;
     }
-     #ba-box {
-         top: 80%;
-         left: 5%;
-     }
+
+    #ba-box {
+        top: 80%;
+        left: 5%;
+    }
+
     #ba-box > h2 {
         font-size: 3.4em;
     }
+
     #basic-animation > h1 {
         font-size: 4.5em;
         left: 7%;
         top: 68%;
     }
+
     #basic-animation > p {
         top: 55%;
         left: 60%;
     }
-        #bc-box {
-         top: 140%;
-         left: 20%;
-     }
+
+    #bc-box {
+        top: 140%;
+        left: 20%;
+    }
+
     #basic-content > h1 {
         font-size: 4.5em;
         left: 40%;
         top: 128%;
     }
+
     #basic-content > p {
         top: 115%;
         left: 0;
     }
-     #bu-box {
-         top: 200%;
-         left: 5%;
-     }
+
+    #bu-box {
+        top: 200%;
+        left: 5%;
+    }
+
     #basic-ux > h1 {
         font-size: 4.5em;
         left: 7%;
         top: 188%;
     }
+
     #basic-ux > p {
         top: 175%;
         left: 60%;
     }
-    }
+}
 
 /*PORTFOLIO PAGES*/
 #bw,
@@ -733,4 +750,39 @@ main {
     transition: all .25s !important;
     transform: translateY(-10%) !important;
     background-color: #B38D97;
+}
+
+@media only screen and (max-width:900px) {
+    .sectionheader {
+        width: 80%;
+        transform: translate(0%, 0%);
+    }
+
+    .odd-h5,
+    even-h5 {
+        left: 13%;
+    }
+
+    .page-box {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 8fr 1fr;
+        grid-template-areas:
+            ". p ."
+            ". img ."
+            ". title ."
+            ". download .";
+    }
+
+    #bw,
+    #ba,
+    #bc,
+    #bu {
+        padding-bottom: 15%;
+    }
+
+    #button020406 {
+
+        top: 0%;
+    }
 }
