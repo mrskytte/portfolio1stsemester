@@ -4,7 +4,7 @@
 
 const hamburger = document.getElementById("hide-button")
 const hamLine = document.getElementsByClassName("hamburger")
-const side = document.getElementsByTagName("side")
+const side = document.getElementById("side")
 
 
 hamburger.addEventListener("click", openMenu)
@@ -13,7 +13,7 @@ var counter = 0
 
 function openMenu(){
     if (counter == 0){
-    side[0].style.top = "0";
+    side.style.top = "0";
     hamburger.style.bottom = "93%";
     hamburger.style.borderRadius = "50px"
     hamburger.style.boxShadow = "5px 10px 20px rgba(0, 0, 0, 0.16)"
@@ -22,7 +22,7 @@ function openMenu(){
     hamLine[1].style.transform = "rotate(90deg)";
         counter++;
 }else {
-    side[0].style.top = "100vh";
+    side.style.top = "100vh";
     hamburger.style.bottom = "0";
     hamburger.style.borderRadius = ""
     hamburger.style.boxShadow = "5px 0px 6px rgba(0, 0, 0, 0.16)"
@@ -32,6 +32,7 @@ function openMenu(){
     counter = 0;
 }
 }
+
 
 
 //DEFINING ELEMENTS

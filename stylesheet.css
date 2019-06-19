@@ -65,7 +65,7 @@ body {
 
 /*SIDEBAR*/
 
-side {
+#side {
     transition: all 1s;
     position: fixed;
     width: 17vw;
@@ -75,7 +75,7 @@ side {
 }
 
 @media only screen and (max-width:900px) {
-    side {
+    #side {
         top: 100vh;
         width: 100vw;
         z-index: 2

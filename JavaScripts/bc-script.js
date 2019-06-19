@@ -4,7 +4,7 @@
 
 const hamburger = document.getElementById("hide-button")
 const hamLine = document.getElementsByClassName("hamburger")
-const side = document.getElementsByTagName("side")
+const side = document.getElementById("side")
 
 
 hamburger.addEventListener("click", openMenu)
@@ -13,7 +13,7 @@ var counter = 0
 
 function openMenu(){
     if (counter == 0){
-    side[0].style.top = "0";
+    side.style.top = "0";
     hamburger.style.bottom = "93%";
     hamburger.style.borderRadius = "50px"
     hamburger.style.boxShadow = "5px 10px 20px rgba(0, 0, 0, 0.16)"
@@ -22,7 +22,7 @@ function openMenu(){
     hamLine[1].style.transform = "rotate(90deg)";
         counter++;
 }else {
-    side[0].style.top = "100vh";
+    side.style.top = "100vh";
     hamburger.style.bottom = "0";
     hamburger.style.borderRadius = ""
     hamburger.style.boxShadow = "5px 0px 6px rgba(0, 0, 0, 0.16)"
@@ -43,7 +43,7 @@ task030201.addEventListener("mouseleave", Img1Reset)
 
 function Img1Action() {
     task030201.style.boxShadow = ("6px 12px 24px rgba(0, 0, 0, 0.3)");
-    task030201.style.transform = ("translate(1%, 1%)")
+    task030201.style.transform = ("translate(-1%, 1%)")
     h5[0].style.transform = ("translate(.5%, 40%)")
 }
 
@@ -122,8 +122,8 @@ var Img3Timer = {
 function Img3Action() {
     Img3Timer.start();
     task030204.style.boxShadow = ("6px 12px 24px rgba(0, 0, 0, 0.3)");
-    task030204.style.transform = ("translate(1%, 1%)")
-    h5[0].style.transform = ("translate(.5%, 40%)")
+    task030204.style.transform = ("translate(-1%, 1%)")
+    h5[2].style.transform = ("translate(.5%, 40%)")
 }
 
 function changeImg3() {
@@ -141,7 +141,7 @@ function Img3Reset() {
     Img3.setAttribute("src", Img3Array[Img3Index]);
     task030204.style.boxShadow = ("10px 8px 16px rgba(0, 0, 0, 0.16)");
     task030204.style.transform = ("translate(0%, 0%)")
-    h5[0].style.transform = ("translate(0%, 50%)")
+    h5[2].style.transform = ("translate(0%, 50%)")
 }
 
 //TASK 03-02-05
@@ -169,7 +169,7 @@ function Img4Action() {
     Img4Timer.start();
     task030205.style.boxShadow = ("6px 12px 24px rgba(0, 0, 0, 0.3)");
     task030205.style.transform = ("translate(1%, 1%)")
-    h5[1].style.transform = ("translate(-.5%, 40%)")
+    h5[3].style.transform = ("translate(-.5%, 40%)")
 }
 
 function changeImg4() {
@@ -187,5 +187,5 @@ function Img4Reset() {
     Img4.setAttribute("src", Img4Array[Img4Index]);
     task030205.style.boxShadow = ("10px 8px 16px rgba(0, 0, 0, 0.16)");
     task030205.style.transform = ("translate(0%, 0%)")
-    h5[2].style.transform = ("translate(0%, 50%)")
+    h5[3].style.transform = ("translate(0%, 50%)")
 }
