@@ -39,7 +39,8 @@ h4 {
     text-shadow: 7px 3px 6px rgba(111, 92, 114, 0.15);
     padding: 0;
     margin: 0;
-    transform: translate(10%, 50%)
+    -webkit-transform: translate(10%, 50%);
+            transform: translate(10%, 50%)
 }
 
 .title-h3 {
@@ -48,7 +49,8 @@ h4 {
     padding: 0;
     margin: 0;
     text-transform: uppercase;
-    transform: translate(15%, 0%)
+    -webkit-transform: translate(15%, 0%);
+            transform: translate(15%, 0%)
 }
 
 body {
@@ -66,6 +68,7 @@ body {
 /*SIDEBAR*/
 
 #side {
+    -webkit-transition: all 1s;
     transition: all 1s;
     position: fixed;
     width: 17vw;
@@ -74,15 +77,8 @@ body {
     box-shadow: 5px 0px 6px rgba(0, 0, 0, 0.16);
 }
 
-@media only screen and (max-width:900px) {
-    #side {
-        top: 100vh;
-        width: 100vw;
-        z-index: 2
-    }
-}
-
 #hide-button {
+    -webkit-transition: all 1s;
     transition: all 1s;
     display: none;
     position: fixed;
@@ -98,14 +94,9 @@ body {
     z-index: 3
 }
 
-@media only screen and (max-width:900px) {
-    #hide-button {
-        display: inherit;
-    }
-}
-
 
 .hamburger {
+    -webkit-transition: all 1s;
     transition: all 1s;
 }
 
@@ -135,32 +126,22 @@ body {
 
 nav {
     height: 70vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin: auto;
-    transform: translateY(15%)
-}
-
-@media only screen and (max-width:900px) {
-    nav {
-        display: inherit;
-        width: 80%;
-        margin: auto;
-        margin-top: 15%;
-        text-align: center;
-    }
+    -webkit-transform: translateY(15%);
+            transform: translateY(15%)
 }
 
 main {
     margin-left: 17%;
-}
-
-@media only screen and (max-width:900px) {
-    main {
-        margin: auto;
-        min-width: 390px;
-    }
 }
 
 
@@ -175,23 +156,16 @@ main {
     max-width: 200px;
 }
 
-@media only screen and (max-width:900px) {
-    #logo-img {
-        margin: 0;
-    }
-}
-
 #list-points {
     margin: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     font-size: .8em;
-}
-
-@media only screen and (max-width:900px) {
-    #list-points {
-        margin: 10%;
-    }
 }
 
 #list-points > p {
@@ -199,8 +173,11 @@ main {
 }
 
 #some-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 .fab {
@@ -229,11 +206,13 @@ main {
 }
 
 .htmltop {
-    transform: translate(10%, 400%);
+    -webkit-transform: translate(10%, 400%);
+            transform: translate(10%, 400%);
 }
 
 .htmlbottom {
-    transform: translate(10%, 0%);
+    -webkit-transform: translate(10%, 0%);
+            transform: translate(10%, 0%);
 }
 
 .hw {
@@ -242,7 +221,8 @@ main {
     text-transform: uppercase;
     color: #B38D97;
     text-shadow: 10px 10px 20px rgba(179, 141, 151, 0.5);
-    transform: translate(5%, 40%);
+    -webkit-transform: translate(5%, 40%);
+            transform: translate(5%, 40%);
     padding: 0;
     margin: 0;
 }
@@ -251,40 +231,22 @@ main {
     font-weight: 800;
     font-size: 0.9em;
     text-shadow: 10px 10px 20px rgba(112, 121, 140, 0.5);
-    transform: translate(50%, 100%);
-}
-
-@media only screen and (max-width:900px) {
-    .hw {
-        transform: translate(5%, 20%);
-    }
-
-    .index-info {
-        transform: translate(30%, 100%);
-    }
+    -webkit-transform: translate(50%, 100%);
+            transform: translate(50%, 100%);
 }
 
 /*ABOUT*/
 
 #about {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     grid-template-areas:
         "title tble"
         "p tble";
     overflow-y: hidden;
     height: 100%
-}
-
-@media only screen and (max-width:900px) {
-    #about {
-        grid-template-columns: 1fr 8fr 1fr;
-        grid-template-areas:
-            ". title ."
-            ". p ."
-            ". tble .";
-        overflow-x: visible;
-    }
 }
 
 #title {
@@ -301,14 +263,8 @@ main {
     width: 80%;
     margin: auto;
     font-size: .7em;
-    transform: translateY(-20%);
-}
-
-@media only screen and (max-width:900px) {
-    #about-text {
-        align-self: end;
-        transform: translateY(-10%);
-    }
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
 }
 
 #about-table {
@@ -322,23 +278,18 @@ main {
     box-shadow: 10px 8px 16px rgba(0, 0, 0, 0.15);
     text-align: center;
     overflow: hidden;
-    align-self: center;
-}
-
-@media only screen and (max-width:900px) {
-    #about-table {
-        min-height: 200px;
-        margin: 0;
-        justify-self: center;
-        transform: translateY(-25%);
-    }
+    -ms-flex-item-align: center;
+        align-self: center;
 }
 
 
 /*PORTFOLIO*/
 #portfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 .odd-numbers {
@@ -360,6 +311,7 @@ main {
 }
 
 .portfolio-boxes {
+    -webkit-transition: all 1s;
     transition: all 1s;
     background-color: #FCF8F4;
     box-shadow: 5px 0px 6px rgba(0, 0, 0, 0.16);
@@ -367,18 +319,6 @@ main {
     width: 18em;
     border-radius: 50px;
     cursor: pointer;
-}
-
-@media only screen and (max-width:900px) {
-
-    .odd-numbers,
-    .even-numbers {
-        font-size: 18em;
-    }
-
-    .portfolio-boxes {
-        width: 15em;
-    }
 }
 
 #bw-box {
@@ -399,6 +339,7 @@ main {
 }
 
 #basic-web > h1 {
+    -webkit-transition: all 1s;
     transition: all 1s;
     font-size: 5.5em;
     padding: 0;
@@ -414,6 +355,7 @@ main {
 }
 
 #basic-web > p {
+    -webkit-transition: all 1s;
     transition: all 1s;
     text-shadow: 10px 10px 20px rgba(112, 121, 140, 0.5);
     position: absolute;
@@ -438,6 +380,7 @@ main {
 }
 
 #basic-animation > h1 {
+    -webkit-transition: all 1s;
     transition: all 1s;
     font-size: 5.5em;
     padding: 0;
@@ -453,6 +396,7 @@ main {
 }
 
 #basic-animation > p {
+    -webkit-transition: all 1s;
     transition: all 1s;
     color: #B38D97;
     text-shadow: 10px 10px 20px rgba(179, 141, 151, 0.5);
@@ -477,6 +421,7 @@ main {
 }
 
 #basic-content > h1 {
+    -webkit-transition: all 1s;
     transition: all 1s;
     font-size: 5.5em;
     padding: 0;
@@ -491,6 +436,7 @@ main {
 }
 
 #basic-content > p {
+    -webkit-transition: all 1s;
     transition: all 1s;
     color: #FFCAD4;
     text-shadow: 10px 10px 20px rgba(255, 202, 212, 0.5);
@@ -515,6 +461,7 @@ main {
 }
 
 #basic-ux > h1 {
+    -webkit-transition: all 1s;
     transition: all 1s;
     font-size: 5.5em;
     padding: 0;
@@ -530,82 +477,13 @@ main {
 }
 
 #basic-ux > p {
+    -webkit-transition: all 1s;
     transition: all 1s;
     color: #6F5C72;
     text-shadow: 10px 10px 20px rgba(111, 92, 114, 0.5);
     position: absolute;
     top: 355%;
     right: 32%;
-}
-
-@media only screen and (max-width:900px) {
-    #bw-box {
-        top: 20%;
-        left: 20%;
-    }
-
-    #basic-web > h1 {
-        font-size: 4.5em;
-        left: 40%;
-        top: 8%;
-    }
-
-    #basic-web > p {
-        top: -5%;
-        left: 2%;
-    }
-
-    #ba-box {
-        top: 80%;
-        left: 5%;
-    }
-
-    #ba-box > h2 {
-        font-size: 3.4em;
-    }
-
-    #basic-animation > h1 {
-        font-size: 4.5em;
-        left: 7%;
-        top: 68%;
-    }
-
-    #basic-animation > p {
-        top: 55%;
-        left: 60%;
-    }
-
-    #bc-box {
-        top: 140%;
-        left: 20%;
-    }
-
-    #basic-content > h1 {
-        font-size: 4.5em;
-        left: 40%;
-        top: 128%;
-    }
-
-    #basic-content > p {
-        top: 115%;
-        left: 0;
-    }
-
-    #bu-box {
-        top: 200%;
-        left: 5%;
-    }
-
-    #basic-ux > h1 {
-        font-size: 4.5em;
-        left: 7%;
-        top: 188%;
-    }
-
-    #basic-ux > p {
-        top: 175%;
-        left: 60%;
-    }
 }
 
 /*PORTFOLIO PAGES*/
@@ -621,28 +499,40 @@ main {
     width: 64%;
     font-size: 0.9em;
     margin: auto;
-    transform: translate(-10%, 30%);
+    -webkit-transform: translate(-10%, 30%);
+            transform: translate(-10%, 30%);
 }
 
 .port-pages > h4 {
-    transform: translate(6%, 55%);
+    -webkit-transform: translate(6%, 55%);
+            transform: translate(6%, 55%);
 }
 
 .port-pages > h3 {
-    transform: translate(8%, 5%);
+    -webkit-transform: translate(8%, 5%);
+            transform: translate(8%, 5%);
 }
 
 .task-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .odd-h5 {
+    -webkit-transition: all 1s;
     transition: all 1s;
     position: relative;
     left: 50%;
-    transform: translateY(50%);
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
     z-index: -1;
     font-size: 5em;
     font-weight: bold;
@@ -652,10 +542,12 @@ main {
 }
 
 .even-h5 {
+    -webkit-transition: all 1s;
     transition: all 1s;
     position: relative;
     left: 5%;
-    transform: translateY(50%);
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
     z-index: -1;
     font-size: 5em;
     font-weight: bold;
@@ -665,6 +557,7 @@ main {
 }
 
 .page-box {
+    -webkit-transition: all 1s;
     transition: all 1s;
     height: 20%;
     width: 65%;
@@ -676,8 +569,10 @@ main {
 }
 
 .odd-box {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     grid-template-areas:
         "p img"
         "p title"
@@ -685,8 +580,10 @@ main {
 }
 
 .even-box {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     grid-template-areas:
         "img p"
         "title p"
@@ -707,7 +604,8 @@ main {
 #img-020406 {
     grid-area: img;
     width: 100%;
-    align-self: end;
+    -ms-flex-item-align: end;
+        align-self: end;
 }
 
 .img-caption {
@@ -739,7 +637,8 @@ main {
     text-transform: uppercase;
     font-weight: bolder;
     font-family: 'Oswald', sans-serif;
-    align-self: start;
+    -ms-flex-item-align: start;
+        align-self: start;
 }
 
 #button020406 {
@@ -748,28 +647,175 @@ main {
 }
 
 .img-a:hover {
+    -webkit-transition: all .25s !important;
     transition: all .25s !important;
-    transform: translateY(-10%) !important;
+    -webkit-transform: translateY(-10%) !important;
+            transform: translateY(-10%) !important;
     background-color: #B38D97;
 }
 
-@media only screen and (max-width:900px) {
-    .sectionheader {
+@media only screen and (max-width:900px){
+
+    #side{
+        top: 100vh;
+        width: 100vw;
+        z-index: 2;
+    }
+
+    #hide-button{
+        display: inherit;
+    }
+
+    nav{
+        display: inherit;
         width: 80%;
-        transform: translate(0%, 0%);
+        margin: auto;
+        margin-top: 15%;
+        text-align: center;
+    }
+
+    main{
+        margin: auto;
+        min-width: 390px;
+    }
+
+    #logo-img{
+        margin: 0;
+    }
+
+    #list-points{
+        margin: 10%;
+    }
+
+    .hw{
+        -webkit-transform: translate(5%, 20%);
+                transform: translate(5%, 20%);
+    }
+
+    .index-info{
+        -webkit-transform: translate(30%, 100%);
+                transform: translate(30%, 100%);
+    }
+
+    #about{
+        -ms-grid-columns: 1fr 8fr 1fr;
+            grid-template-columns: 1fr 8fr 1fr;
+        grid-template-areas: ". title ."
+            ". p ."
+            ". tble .";
+        overflow-x: visible;
+    }
+
+    #about-text{
+        -ms-flex-item-align: end;
+            align-self: end;
+        -webkit-transform: translateY(-10%);
+                transform: translateY(-10%);
+    }
+
+    #about-table{
+        min-height: 200px;
+        margin: 0;
+        justify-self: center;
+        -webkit-transform: translateY(-25%);
+                transform: translateY(-25%);
+    }
+
+    .odd-numbers,
+    .even-numbers{
+        font-size: 18em;
+    }
+
+    .portfolio-boxes{
+        width: 15em;
+    }
+
+    #bw-box{
+        top: 20%;
+        left: 20%;
+    }
+
+    #basic-web > h1{
+        font-size: 4.5em;
+        left: 40%;
+        top: 8%;
+    }
+
+    #basic-web > p{
+        top: -5%;
+        left: 2%;
+    }
+
+    #ba-box{
+        top: 80%;
+        left: 5%;
+    }
+
+    #ba-box > h2{
+        font-size: 3.4em;
+    }
+
+    #basic-animation > h1{
+        font-size: 4.5em;
+        left: 7%;
+        top: 68%;
+    }
+
+    #basic-animation > p{
+        top: 55%;
+        left: 60%;
+    }
+
+    #bc-box{
+        top: 140%;
+        left: 20%;
+    }
+
+    #basic-content > h1{
+        font-size: 4.5em;
+        left: 40%;
+        top: 128%;
+    }
+
+    #basic-content > p{
+        top: 115%;
+        left: 0;
+    }
+
+    #bu-box{
+        top: 200%;
+        left: 5%;
+    }
+
+    #basic-ux > h1{
+        font-size: 4.5em;
+        left: 7%;
+        top: 188%;
+    }
+
+    #basic-ux > p{
+        top: 175%;
+        left: 60%;
+    }
+
+    .sectionheader{
+        width: 80%;
+        -webkit-transform: translate(0%, 0%);
+                transform: translate(0%, 0%);
     }
 
     .odd-h5,
-    even-h5 {
+    even-h5{
         left: 13%;
     }
 
-    .page-box {
+    .page-box{
         width: 80%;
+        display: -ms-grid;
         display: grid;
-        grid-template-columns: 1fr 8fr 1fr;
-        grid-template-areas:
-            ". p ."
+        -ms-grid-columns: 1fr 8fr 1fr;
+            grid-template-columns: 1fr 8fr 1fr;
+        grid-template-areas: ". p ."
             ". img ."
             ". title ."
             ". download .";
@@ -778,12 +824,12 @@ main {
     #bw,
     #ba,
     #bc,
-    #bu {
+    #bu{
         padding-bottom: 15%;
     }
 
-    #button020406 {
-
+    #button020406{
         top: 0%;
     }
 }
+
